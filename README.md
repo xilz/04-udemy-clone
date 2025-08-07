@@ -1,12 +1,16 @@
-# React + Vite
+## 项目介绍
+Udemy Clone Website
+一个基于 React 的在线课程平台，支持课程展示、视频学习与进度跟踪等
+Learn from 👉 https://youtu.be/p2zWawmDkF4?si=cipeH5bUmV1D9apC
+*技术栈* - React, Vite, Tailwind CSS, React Router DOM 7, Clerk 身份认证, Quill 富文本编辑器
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 快速开始
+*安装依赖*
+npm install
 
-Currently, two official plugins are available:
+npm install @clerk/clerk-react humanize-duration quill rc-progress react react-dom react-router-dom react-youtube uniqid
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+npm install --save-dev @eslint/js @types/react @types/react-dom @vitejs/plugin-react autoprefixer eslint eslint-plugin-react-hooks eslint-plugin-react-refresh globals postcss tailwindcss vite
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+*运行开发服务器*
+npm run dev
