@@ -13,13 +13,23 @@ Learn from 👉 [视频教程](https://youtu.be/p2zWawmDkF4?si=cipeH5bUmV1D9apC)
 - Quill 富文本编辑器   
 ...  
 
-## 快速开始
-*安装依赖*  
-npm install  
+## 🚀 快速开始
 
-npm install @clerk/clerk-react humanize-duration quill rc-progress react react-dom react-router-dom react-youtube uniqid  
+### 安装依赖
+```bash
+# 安装生产依赖
+npm install @clerk/clerk-react humanize-duration quill rc-progress react react-dom react-router-dom react-youtube uniqid
 
-npm install --save-dev @eslint/js @types/react @types/react-dom @vitejs/plugin-react autoprefixer eslint eslint-plugin-react-hooks eslint-plugin-react-refresh globals postcss tailwindcss vite  
+# 安装开发依赖
+npm install --save-dev @eslint/js @types/react @types/react-dom @vitejs/plugin-react autoprefixer eslint eslint-plugin-react-hooks eslint-plugin-react-refresh globals postcss tailwindcss vite
+```
 
-*运行开发服务器*  
+### 运行开发服务器
+```bash
 npm run dev
+```
+
+### 构建生产环境
+```bash
+npm run build
+```
