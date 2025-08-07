@@ -12,6 +12,7 @@ export const AppContextProvider = (props) => {
 
     const [allCourses, setAllCourses] = useState([])
     const [isEducator, setIsEducator] = useState(true)
+    const [isAlreadyEnrolled, setIsAlreadyEnrolled] = useState(false)
 
     // Fetch all courses from backend
     const fetchAllCourses = async () => {
@@ -39,6 +40,7 @@ export const AppContextProvider = (props) => {
     const calculateCourseDuration = (course) => {
         let time = 0;
         course.courseContent.map((chapter) => chapter.chapterContent.map((lecture) => time += lecture.lectureDuration))
+        return humanizeDuration(time * 60 * 1000, {units: ['h', 'm']});
     }
 
     // Function calculate to No of lectures in the course
@@ -58,7 +60,7 @@ useEffect(() => {
 }, [])
 
     const value = {
-        currency, allCourses, navigate, calculateRating, isEducator, setIsEducator, calculateChapterTime, calculateCourseDuration, calculateNoOfLectures,
+        currency, allCourses, navigate, calculateRating, isEducator, setIsEducator, calculateChapterTime, calculateCourseDuration, calculateNoOfLectures, isAlreadyEnrolled, setIsAlreadyEnrolled
     }
     return (
         <AppContext.Provider value={value}>
